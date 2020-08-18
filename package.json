@@ -2,7 +2,7 @@
 	"name": "mustachinator",
 	"displayName": "Mustachinator",
 	"description": "Creates a shortcut to turned highlighted text into a mustache template.",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"repository": "https://github.com/marwaybs/mustachinator",
 	"publisher": "bsmarway",
 	"engines": {
@@ -16,10 +16,14 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
+		"commands": [{
+			"command": "mustachinator.createMustacheTemplate",
+			"title": "Create Mustache Template"
+		}],
+		"keybindings": [{
 				"command": "mustachinator.createMustacheTemplate",
-				"title": "Create Mustache Template"
+				"key": "ctrl+alt+a",
+				"mac": "ctrl+alt+a"
 			}
 		]
 	},
