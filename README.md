@@ -5,4 +5,4 @@ VSCode shortcut to convert highlighted text to mustache templates.
 
 ## Demo
 
-![demo](demo.gif)
+![demo](https://github.com/marwaybs/mustachinator/raw/master/demo.gif)

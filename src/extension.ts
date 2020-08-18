@@ -17,7 +17,6 @@ export function activate(context: vscode.ExtensionContext) {
 		// The code you place here will be executed every time your command is executed
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Creating Mustache Template...');
 		vscode.commands.executeCommand('editor.action.insertCursorAtEndOfEachLineSelected');
 		const editor = vscode.window.activeTextEditor;
 
