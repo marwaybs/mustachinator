@@ -31,15 +31,15 @@ export function activate(context: vscode.ExtensionContext) {
 				//remove line break
 				splitHtml[i] = splitHtml[i].replace(/(\r\n|\n|\r)/gm, "");
 				//adding mustache template syntax
-				if (splitHtml[i] !== '') {
-					splitHtml[i] = "'" + splitHtml[i] + " ' +";
+				if (splitHtml[i].trim() !== '') {
+					splitHtml[i] = splitHtml[i].replace(/(\s*)(.*)/, "$1\"$2 \" +");
 				}
 			}
 
 			// joining html with break lines
 			const template = splitHtml.join('\n');
 
-			//replacing selection with mustache template
+			// replacing selection with mustache template
 			editor.edit(editBuilder => {
 				editBuilder.replace(selection, template);
 			});

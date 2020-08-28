@@ -1,8 +1,8 @@
 {
 	"name": "mustachinator",
 	"displayName": "Mustachinator",
-	"description": "Creates a shortcut to turned highlighted text into a mustache template.",
-	"version": "0.0.3",
+	"description": "Creates a shortcut to turn highlighted text into a mustache template.",
+	"version": "0.0.5",
 	"repository": "https://github.com/marwaybs/mustachinator",
 	"publisher": "bsmarway",
 	"engines": {
